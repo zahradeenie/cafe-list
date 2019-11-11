@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Style for all nav bar */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+/* Style for all filter sections */
+
+.filter-section {
+    float: left;
+    width: 20%;
+    background-color: lightgrey;
+    height: 100%;
+    position: fixed;
+}
+
+/* Style for all city sections */
+
+.city-section {
+    width: 80%;
+    background-color: lightcyan;
+    float: right;
+}
+
+.cafe-section h2 {
+    margin-left: 1.5rem;
+    margin-top: 20px;
+    font-size: 1.25rem;
+}
+
+.cafe-card {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    margin: 1.5rem 1.5rem;
+}
+
+.cafe-card h4,
+.cafe-card p {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 150px;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+img {
+    height: inherit;
+    position: inherit;
+}
+
+/* Style for cafes in city section #barcelona */
+
+.cafe1 {
+    background-image: url(https://dl.airtable.com/.attachmentThumbnails/7834daefc97e35b1d5ab922dd758f12d/5e7b9b12);
+    height: 15em;
+    width: 20em;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.cafe2 {
+    background-image: url(https://dl.airtable.com/.attachmentThumbnails/9cb0ebf7ab8f87a8d847a2dcef98d5cf/43dcaeee);
+    height: 15em;
+    width: 20em;
+    background-size: cover;
+    border-radius: 10px;
+}
