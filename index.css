@@ -24,58 +24,92 @@
     position: fixed;
 }
 
-/* Style for all city sections */
+/* Style for all items in city sections */
 
 .city-section {
     width: 80%;
+    height: 100%;
     background-color: lightcyan;
     float: right;
 }
 
-.cafe-section h2 {
-    margin-left: 1.5rem;
-    margin-top: 20px;
+@media only screen and (max-width: 470px) {
+    .city-section {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .filter-section {
+        display: none;
+    }
+}
+
+.cafe-container {
+    display: inline-block;
+}
+
+.cafe-container h2 {
+    padding-bottom: 1rem;
     font-size: 1.25rem;
+    display: block;
 }
 
 .cafe-card {
     text-decoration: none;
     color: #fff;
-    text-align: center;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
     display: inline-block;
-    margin: 1.5rem 1.5rem;
 }
+
 
 .cafe-card h4,
 .cafe-card p {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
-    top: 150px;
+    top: 100px;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
 }
 
 h4 {
     font-size: 1.5rem;
 }
 
-img {
-    height: inherit;
-    position: inherit;
-}
+/* Style for individual items in city section #barcelona */
 
-/* Style for cafes in city section #barcelona */
+a.cafe-card {
+    
+}
 
 .cafe1 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/7834daefc97e35b1d5ab922dd758f12d/5e7b9b12);
-    height: 15em;
-    width: 20em;
+    height: 10em;
+    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 .cafe2 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/9cb0ebf7ab8f87a8d847a2dcef98d5cf/43dcaeee);
-    height: 15em;
-    width: 20em;
+    height: 10em;
+    width: 15em;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.cafe3 {
+    background-image: url(https://dl.airtable.com/.attachmentThumbnails/e568c6b8ef7886e9fafd604efd1590a6/aee52f97);
+    height: 10em;
+    width: 15em;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.cafe4 {
+    background-image: url(https://dl.airtable.com/.attachmentThumbnails/e568c6b8ef7886e9fafd604efd1590a6/aee52f97);
+    height: 10em;
+    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
