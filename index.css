@@ -32,8 +32,13 @@ body {
     padding: 5px 10px;
     font-size: 0.76rem;
     border-radius: 10px;
+    border: none;
 }
 
+.nav-bar input {
+    border: none;
+    padding: 2px;
+}
 
 
 /* Style for all filter sections */
@@ -46,25 +51,11 @@ body {
 }
 
 /* Style for all items in city sections */
-
 .city-section {
     width: 80%;
     height: auto;
     float: right;
     background-color: #FFF8E7;
-}
-
-@media only screen and (max-width: 470px) {
-    .city-section {
-        width: 100%;
-        float: none;
-        padding-top: 0.5rem;
-        margin-right: 0rem;
-    }
-
-    .filter-section {
-        display: none;
-    }
 }
 
 .city-section h2 {
@@ -75,21 +66,24 @@ body {
     background-color: #FFEFC9;
     border-top: 1px solid #eec054;
     border-bottom: 1px solid #eec054;
-    
-    
 }
 
 .cafe-section {
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    
 }
 
 .cafe-card {
     text-decoration: none;
     color: #fff;
     margin-bottom: 1rem;
-    margin-right: 0.5rem;
+}
+
+.cafe-card-size {
+    height: 10em;
+    width: 15em;
 }
 
 .cafe-card p {
@@ -110,68 +104,66 @@ body {
     font-size: 1rem;
 }
 
+/* Screen break styling */
+@media only screen and (max-width: 470px) { 
+    .city-section { /* making city section take up full space */
+        width: 100%;
+        float: none;
+        padding-top: 0.5rem;
+        margin: 0 auto;
+    }
+
+    .filter-section { /* removing filter section from display*/
+        display: none;
+    }
+}
+
 /* Style for individual items in city section #barcelona */
 
 #barcelona .cafe1 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/7834daefc97e35b1d5ab922dd758f12d/5e7b9b12);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #barcelona .cafe2 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/9cb0ebf7ab8f87a8d847a2dcef98d5cf/43dcaeee);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #barcelona .cafe3 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/e568c6b8ef7886e9fafd604efd1590a6/aee52f97);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #barcelona .cafe4 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/10a551a6b32d3de72247f89f14579f3f/5c254f68);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #barcelona .cafe5 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/fa619e3aa723e8cc9a25abb01927e6bd/4e05a400);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #barcelona .cafe6 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/d34f85687af62c8e2e3f45169f703ebe/e530d145);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #barcelona .cafe7 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/1fac29391d1a00e16def620839db8223/6c0b836c);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #barcelona .cafe8 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/3c8fdd31679e9289789ff9e6f381e659/e56d7e66);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
@@ -180,64 +172,48 @@ body {
 
 #london .cafe1 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/9d1a9debabd6a1dc37c271fa8305760c/82745542);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe2 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/b7e3966938cc837943ea4cdc02ca0bbb/bbfef8ab);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe3 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/a4e32b3a4c99cc87de59a9ef99192dc2/2ab2fc21);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe4 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/e61378caf858581d4a69785387951656/140ec6b1);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe5 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/320ced9dc6c2585ced26e98ab5c4a32f/4f5db862);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe6 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/ff19975b1ee29fb781a4344c376b4b24/ee6ecddc);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe7 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/a614bc6fb766f285fbd3195a2c9ac6b1/3c2c8187);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe8 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/cc14b9f946843f94b4be7ff0c6930ca1/2a2e2e97);
-    height: 10em;
-    width: 15em;
     background-size: cover;
     border-radius: 10px;
 }
