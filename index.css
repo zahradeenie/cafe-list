@@ -28,11 +28,18 @@ body {
     margin-left: 1.5rem;
 }
 
+.nav-bar form {
+    display: flex;
+}
+
 .nav-bar button {
-    padding: 5px 10px;
+    padding: 5px 40px;
     font-size: 0.76rem;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 0.5rem;
 }
 
 .nav-bar input {
@@ -40,6 +47,24 @@ body {
     padding: 2px;
 }
 
+/* Screen break styling - NAV BAR */
+
+@media only screen and (max-width: 470px) {
+    .nav-bar {
+        height: auto;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #logo {
+        padding: 0.5rem;
+        margin-left: 0;
+    }
+
+    .nav-bar form {
+        display: none;
+    }
+}
 
 /* Style for all filter sections */
 
@@ -69,42 +94,52 @@ body {
 }
 
 .cafe-section {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    
 }
 
 .cafe-card {
+    width: 30%;
     text-decoration: none;
     color: #fff;
     margin-bottom: 1rem;
-}
-
-.cafe-card-size {
-    height: 10em;
-    width: 15em;
-}
-
-.cafe-card p {
-    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
     position: relative;
-    top: 100px;
-    text-shadow: 2px 2px 5px #000;
-    text-align: center;
-    font-size: 0.7rem;
+    border-radius: 5px;
+}
+
+.cafe-card img {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    background-size: cover;
 }
 
 .cafe-card h4 {
     background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 98px;
     text-shadow: 2px 2px 5px #000;
     text-align: center;
     font-size: 1rem;
+    width: 100%
 }
 
-/* Screen break styling */
+.cafe-card p {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 119px;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+    font-size: 0.7rem;
+    width: 100%
+}
+
+/* Screen break styling - CITY AND FILTER SECTIONS */
 @media only screen and (max-width: 470px) { 
     .city-section { /* making city section take up full space */
         width: 100%;
@@ -112,25 +147,27 @@ body {
         padding-top: 0.5rem;
         margin: 0 auto;
     }
-
     .filter-section { /* removing filter section from display*/
         display: none;
     }
+    .cafe-card {
+        width: 90%;
+    }
+    .cafe-section {
+        justify-content: center;
+    }
+    .cafe-card h4 {
+        font-size: 1.2rem;
+    }
+    .cafe-card p {
+        font-size: 0.9rem;
+        top: 123px;
+    }
+
 }
 
 /* Style for individual items in city section #barcelona */
 
-#barcelona .cafe1 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/7834daefc97e35b1d5ab922dd758f12d/5e7b9b12);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#barcelona .cafe2 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/9cb0ebf7ab8f87a8d847a2dcef98d5cf/43dcaeee);
-    background-size: cover;
-    border-radius: 10px;
-}
 
 #barcelona .cafe3 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/e568c6b8ef7886e9fafd604efd1590a6/aee52f97);
