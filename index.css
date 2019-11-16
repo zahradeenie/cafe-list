@@ -114,10 +114,11 @@ body {
 
 .cafe-card img {
     width: 100%;
+    height: 10rem;
     overflow: hidden;
     display: block;
     border-radius: 5px;
-    position: relative;
+    position: absolute;
 }
 
 .cafe-card h4 {
@@ -133,7 +134,7 @@ body {
 .cafe-card p {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 119px;
+    top: 67%;
     text-shadow: 2px 2px 5px #000;
     text-align: center;
     font-size: 0.7rem;
@@ -162,9 +163,21 @@ body {
     }
     .cafe-card p {
         font-size: 0.9rem;
-        top: 123px;
+        top: 69.5%;
     }
+}
 
+/* Screen break styling - CAFE CARD BLOCK NUMBERS */
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    .cafe-card {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cafe-card {
+        width: 45%;
+    }
 }
 
 /* Style for individual items in city section #barcelona */
