@@ -119,6 +119,7 @@ body {
     display: block;
     border-radius: 5px;
     position: absolute;
+    object-fit: cover;
 }
 
 .cafe-card h4 {
@@ -152,9 +153,6 @@ body {
     .filter-section { /* removing filter section from display*/
         display: none;
     }
-    .cafe-card {
-        width: 90%;
-    }
     .cafe-section {
         justify-content: center;
     }
@@ -172,11 +170,19 @@ body {
     .cafe-card {
         width: 32%;
     }
+
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 870px) {
     .cafe-card {
         width: 45%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .cafe-card {
+        width: 90%;
     }
 }
 
