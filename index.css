@@ -6,7 +6,7 @@
 
 html,
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: "Muli", Helvetica, sans-serif;
 }
 
 /* Style for nav bar */
@@ -23,7 +23,7 @@ body {
 }
 
 #logo { 
-    font-family: "Jockey One", Helvetica, sans-serif;
+    font-family: "Muli", Helvetica, sans-serif;
     font-size: 1.5rem;
     margin-left: 1.5rem;
 }
@@ -96,10 +96,12 @@ body {
 .cafe-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .cafe-card {
-    width: 30%;
+    width: 22%;
+    height: 10rem;
     text-decoration: none;
     color: #fff;
     margin-bottom: 1rem;
@@ -116,7 +118,6 @@ body {
     display: block;
     border-radius: 5px;
     position: relative;
-    background-size: cover;
 }
 
 .cafe-card h4 {
