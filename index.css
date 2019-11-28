@@ -113,10 +113,8 @@ body {
     font-size: 1.25rem;
     text-align: center;
     margin-top: 1rem;
+    width: 60%;;
     background-color: #f9eccb;
-    border-top: 1px solid #eec054;
-    border-bottom: 1px solid #eec054;
-    
 }
 
 .cafe-section {
@@ -215,51 +213,25 @@ body {
 }
 
 
-
-#london .cafe1 {
-    background-image: url();
-    background-size: cover;
-    border-radius: 10px;
+/* footer section */
+footer {
+    position: fixed;
+    width: 20%;
+    bottom: 0px;
+    height: 2rem;
+    background-color: #eec054;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#london .cafe2 {
-    background-image: url();
-    background-size: cover;
-    border-radius: 10px;
+footer p {
+    position: relative;
+    font-size: 0.7rem;
 }
 
-#london .cafe3 {
-    background-image: url();
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#london .cafe4 {
-    background-image: url();
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#london .cafe5 {
-    background-image: url();
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#london .cafe6 {
-    background-image: url();
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#london .cafe7 {
-    background-image: url();
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#london .cafe8 {
-    background-image: url();
-    background-size: cover;
-    border-radius: 10px;
+@media only screen and (max-width: 470px) {
+    footer {
+        display: none;
+    }
 }
