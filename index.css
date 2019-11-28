@@ -75,6 +75,31 @@ body {
     position: fixed;
 }
 
+.filter-section h2 {
+    text-align: center;
+    margin-top: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.filter {
+    width: 50%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+
+
 /* Style for all items in city sections */
 .city-section {
     width: 80%;
@@ -166,18 +191,16 @@ body {
 }
 
 /* Screen break styling - CAFE CARD BLOCK NUMBERS */
-@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .cafe-card {
         width: 32%;
     }
-
 }
 
 @media only screen and (max-width: 870px) {
     .cafe-card {
         width: 45%;
     }
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -187,7 +210,6 @@ body {
 }
 
 /* Style for individual items in city section #barcelona */
-
 
 #barcelona .cafe3 {
     background-image: url(https://dl.airtable.com/.attachmentThumbnails/e568c6b8ef7886e9fafd604efd1590a6/aee52f97);
