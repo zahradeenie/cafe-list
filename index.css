@@ -105,7 +105,7 @@ body {
     width: 80%;
     height: auto;
     float: right;
-    background-color: #FFF8E7;
+    background-color: #fdf8ed;
 }
 
 .city-section h2 {
@@ -113,9 +113,10 @@ body {
     font-size: 1.25rem;
     text-align: center;
     margin-top: 1rem;
-    background-color: #FFEFC9;
+    background-color: #f9eccb;
     border-top: 1px solid #eec054;
     border-bottom: 1px solid #eec054;
+    
 }
 
 .cafe-section {
@@ -135,6 +136,10 @@ body {
     overflow: hidden;
     position: relative;
     border-radius: 5px;
+}
+
+.cafe-card:hover {
+    transform: scale(1.01);
 }
 
 .cafe-card img {
@@ -209,90 +214,52 @@ body {
     }
 }
 
-/* Style for individual items in city section #barcelona */
 
-#barcelona .cafe3 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/e568c6b8ef7886e9fafd604efd1590a6/aee52f97);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#barcelona .cafe4 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/10a551a6b32d3de72247f89f14579f3f/5c254f68);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#barcelona .cafe5 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/fa619e3aa723e8cc9a25abb01927e6bd/4e05a400);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#barcelona .cafe6 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/d34f85687af62c8e2e3f45169f703ebe/e530d145);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#barcelona .cafe7 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/1fac29391d1a00e16def620839db8223/6c0b836c);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#barcelona .cafe8 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/3c8fdd31679e9289789ff9e6f381e659/e56d7e66);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-/* Style for individual items in city section #london */
 
 #london .cafe1 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/9d1a9debabd6a1dc37c271fa8305760c/82745542);
+    background-image: url();
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe2 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/b7e3966938cc837943ea4cdc02ca0bbb/bbfef8ab);
+    background-image: url();
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe3 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/a4e32b3a4c99cc87de59a9ef99192dc2/2ab2fc21);
+    background-image: url();
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe4 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/e61378caf858581d4a69785387951656/140ec6b1);
+    background-image: url();
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe5 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/320ced9dc6c2585ced26e98ab5c4a32f/4f5db862);
+    background-image: url();
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe6 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/ff19975b1ee29fb781a4344c376b4b24/ee6ecddc);
+    background-image: url();
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe7 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/a614bc6fb766f285fbd3195a2c9ac6b1/3c2c8187);
+    background-image: url();
     background-size: cover;
     border-radius: 10px;
 }
 
 #london .cafe8 {
-    background-image: url(https://dl.airtable.com/.attachmentThumbnails/cc14b9f946843f94b4be7ff0c6930ca1/2a2e2e97);
+    background-image: url();
     background-size: cover;
     border-radius: 10px;
 }
