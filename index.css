@@ -170,6 +170,38 @@ body {
     width: 100%
 }
 
+/* Styling for modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+    z-index: 5;
+}
+
+.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-box {
+    position: relative;
+    width: 60%;
+    height: 40%;
+    border-radius: 5px;
+    overflow: auto;
+    cursor: default;
+    background-color: white;
+}
+
 /* Screen break styling - CITY AND FILTER SECTIONS */
 @media only screen and (max-width: 470px) { 
     .city-section { /* making city section take up full space */
@@ -191,9 +223,12 @@ body {
         font-size: 0.9rem;
         top: 69.5%;
     }
+    .city-section h2 {
+        width: inherit;
+    }
 }
 
-/* Screen break styling - CAFE CARD BLOCK NUMBERS */
+/* Screen break styling - CAFE CARD */
 @media only screen and (max-width: 1024px) {
     .cafe-card {
         width: 32%;
