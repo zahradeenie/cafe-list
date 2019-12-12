@@ -134,6 +134,7 @@ body {
     overflow: hidden;
     position: relative;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .cafe-card:hover {
@@ -171,7 +172,7 @@ body {
 }
 
 /* Styling for modal */
-.modal {
+.modal-bg {
     position: fixed;
     top: 0;
     bottom: 0;

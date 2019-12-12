@@ -1,21 +1,31 @@
+let cafeCard = document.querySelectorAll(".cafe-card");
+let modalBg = document.querySelector(".modal-bg");
+let closeModal = document.querySelector(".close-modal");
+let cafeModal = document.querySelectorAll("[data-target]");
 
-window.addEventListener('DOMContentLoaded', () => {
+//opening modals
+function openModal() {
+    modalBg.classList.add("is-visible");
+};
 
-    let openModal = document.querySelector(".modal-click");
-    let modal = document.querySelector(".modal");
-    let closeModal = document.querySelector(".close-modal");
+for (i = 0; i < cafeCard.length; i++) {
+    cafeCard[i].addEventListener('click', openModal);
+};
 
-    /* Opens Modal */
-    openModal.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.classList.add("is-visible");
-    });
+console.log(cafeModal.length);
+console.log(cafeCard.length);
 
-    closeModal.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.classList.remove("is-visible");
-    });
 
+
+
+
+//closing modals
+closeModal.addEventListener("click", () => {
+    modalBg.classList.remove("is-visible");
 });
 
-
+window.addEventListener("click", (event) => {
+    if (event.target === modalBg) {
+        modalBg.classList.remove("is-visible");
+    };
+});
