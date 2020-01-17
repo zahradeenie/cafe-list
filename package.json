@@ -4,7 +4,8 @@
   "description": "website to find cafes to work from in a city",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "dev": "parcel index.html"
   },
   "repository": {
     "type": "git",
